@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Google Sheet Word Definer",
+    "description": "Defines words in Google Sheets",
+    "version": "1.0.0",
+    "permissions":
+    [
+	   "scripting",
+	   "tabs"
+    ],
+    "host_permissions":
+    [
+	   "*://docs.google.com/spreadsheets/*",
+       "*://www.google.com/*"
+    ],
+    "background":
+    {
+	   "service_worker": "background.js"
+    },
+    "content_scripts":
+    [
+        {
+            "js": ["content.js"],
+            "matches": ["*://docs.google.com/spreadsheets/d/*"]
+        }
+    ]
+}
