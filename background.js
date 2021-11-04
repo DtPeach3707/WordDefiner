@@ -36,11 +36,6 @@ async function getDef(word)
 
 function makeDef(defin)
 {
-    var mainDoc = document.getElementById('0-grid-table-container');
-    window.dispatchEvent(new KeyboardEvent('keydown',
-    {
-        key: 'e'
-    }));
     var txt = document.getElementById('t-formula-bar-input').getElementsByClassName('cell-input')[0];
     if(txt)
     {
