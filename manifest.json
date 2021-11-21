@@ -2,11 +2,12 @@
     "manifest_version": 3,
     "name": "Google Sheet Word Definer",
     "description": "Defines words in Google Sheets",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "permissions":
     [
 	   "scripting",
-	   "tabs"
+	   "tabs",
+	   "storage"
     ],
     "host_permissions":
     [
@@ -24,4 +25,8 @@
             "matches": ["*://docs.google.com/spreadsheets/d/*"]
         }
     ]
+    "action":
+    {
+        "default_popup": "popup/popup.html"
+    }
 }
