@@ -24,9 +24,13 @@
             "js": ["content.js"],
             "matches": ["*://docs.google.com/spreadsheets/d/*"]
         }
-    ]
+    ],
     "action":
     {
         "default_popup": "popup/popup.html"
-    }
+    },
+    "icons":
+    {
+	"128": "media/WD128.png"
+    },
 }
