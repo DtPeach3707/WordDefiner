@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Google Sheet Word Definer",
     "description": "Defines words in Google Sheets",
-    "version": "1.0.3",
+    "version": "0.0.3",
     "permissions":
     [
 	   "scripting",
